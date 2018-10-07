@@ -1,0 +1,11 @@
+Dear Admin;
+<% timestamp = Time.now %>
+<%= @guest.fname %> <%= @guest.lname %> visited the TechHandie Corp. website on <%= timestamp.localtime %>. He/she is requesting information regarding a <%= @guest.interest %>. Their detailed information follows:
+
+First:	<%= @guest.fname %>
+Last:	<%= @guest.lname %>
+Phone:	<%= @guest.phone %>
+Email:	<%= @guest.email %>
+Interest: <%= @guest.interest %>
+
+Thanks.

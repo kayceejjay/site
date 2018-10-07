@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Styling */
+  
+@import "bootstrap-sprockets"; /* load sprockets; needed for directives */
+@import "bootstrap"; /* load bootstrap */
+
+/* Fonts Used */
+
+@font-face {
+	font-family: "Bad Script";
+	src: font-url('/assets/BadScript-Regular');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Belleza";
+	src: font-url('/assets/Belleza-Regular');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Bitter";
+	src: font-url('/assets/Bitter-Regular');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Bitter Italic";
+	src: font-url('/assets/Bitter-Italic');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Bitter Bold";
+	src: font-url('/assets/Bitter-Bold');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Dhurjati";
+	src: font-url('/assets/Dhurjati-Regular');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Handel Gothic";
+	src: font-url('/assets/Handel-Gothic');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Milkshake";
+	src: font-url('/assets/Milkshake');
+	font-weight: normal;
+	font-style: normal;
+}

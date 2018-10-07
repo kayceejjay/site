@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag 'pages', media: "all" %><!--use pages.scss to style this view-->
+<div class="page-container">
+    
+    <h1>Contact Information</h1>
+    <h2 id="masthead">TechHandie Corporation</h2>
+    
+    <div class="img">
+        <%= image_tag "phone.svg", alt: "Phone", width: "25px", height: "25px" %>
+        <%= link_to "(201) 817-9826", "tel:2018389236" %>
+        <br>
+        <br>
+        <%= image_tag "printer.svg", alt: "Fax", width: "25px", height: "25px" %>
+        <%= link_to "(201) 603-6967" %>
+        <br>
+        <br>
+        <%= image_tag "email.svg", alt: "Email", width: "30px", height: "30px" %>
+        <%= mail_to "info@techhandie.com", "Customer Service [ info@techhandie.com ]" %>
+    </div>
+
+</div><!-- page-container -->

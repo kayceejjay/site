@@ -1,0 +1,38 @@
+<h1>Dear Admin;</h1>
+<br>
+<% timestamp = Time.now %>
+<p>
+    <%= @guest.fname %> <%= @guest.lname %> visited the TechHandie Corp. website on 
+    <%= timestamp.localtime %>. He/she is requesting information regarding a <%= @guest.interest %>. 
+    Their detailed information follows:
+</p>
+
+<table class="tg" style="undefined;table-layout: fixed; width: 482px">
+<colgroup>
+<col style="width: 112px">
+<col style="width: 370px">
+</colgroup>
+  <tr>
+    <th class="tg-ohy5">First:</th>
+    <th class="tg-ohy5">&lt;<%= @guest.fname %>&gt;</th>
+  </tr>
+  <tr>
+    <td class="tg-ohy5">Last:</td>
+    <td class="tg-ohy5">&lt;<%= @guest.lname %>&gt;</td>
+  </tr>
+  <tr>
+    <td class="tg-ohy5">Phone:</td>
+    <td class="tg-ohy5">&lt;<%= @guest.phone %>&gt;</td>
+  </tr>
+  <tr>
+    <td class="tg-ohy5">Email:</td>
+    <td class="tg-ohy5">&lt;<%= @guest.email %>&gt;</td>
+  </tr>
+  <tr>
+    <td class="tg-zd5i">Interest:</td>
+    <td class="tg-zd5i">&lt;<%= @guest.interest %>&gt;</td>
+  </tr>
+</table>
+
+<br>
+<p>Thanks.</p>

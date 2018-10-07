@@ -1,0 +1,131 @@
+/* Enter name of this file in /config/initializers/assets.rb for precompile */
+
+/* Variables */
+
+$water: #f2f2f2;
+$charcoal: #222;
+
+.page-container {
+    background-color: $water;
+    background-size: cover;
+    text-align: justify;
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Bitter", serif;
+}
+
+h2 {
+    font-family: "Milkshake", cursive;
+    font-size: 1.75em;
+    text-align: justify;
+    padding: 10 0 10 0;
+}
+
+ul.bullet1 {
+  list-style-type: square;
+  font-size: 1.1em;
+}
+
+#masthead {
+    font-family: "Handel Gothic", "Geneva", sans-serif !important;
+    font-size: 1.75em;
+}
+
+.img {
+    display: inline;
+    padding-bottom: 30px;
+}
+
+.visitor-container {
+    display: block;
+    background-color: $water;
+    background-size: cover;
+    text-align: justify;
+    font-size: 1.1em;
+    padding-top: 40px;
+}
+
+#vcount {
+        text-align: center;
+        font-family: "Bitter", serif;
+        font-size: 1.12em;
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 45%;
+        margin-left: 50%;
+        visibility: hidden;
+}
+
+.row {
+    margin-top: 30px;
+    background-color: $water;
+    background-size: cover;
+    text-align: justify;
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+#button {
+    width: 25%;
+    border: none;
+    background-color: $charcoal;
+    color: white;
+    border-radius: 30px; /* rounded button edges */
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.75em;
+        &:hover {
+        background-color: $water;
+        border: 1px solid $charcoal;
+        color: black;
+        font-size: 1em;
+        font-weight: bold;
+        }
+}
+
+.news-container {
+    background-color: $water;
+    background-size: cover;
+    text-align: justify;
+    font-size: 1.1em;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 40%;
+    margin-left: 30%;
+    border-radius: 35px;
+}
+
+#topfive {
+    font-family: "Bitter", serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.word-wrap, .word-wrap1, .word-wrap2 {
+    display: inline;
+    font-family: "Bad Script", cursive;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: justify;
+    overflow: break-word;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    margin-left: 0%;
+}
+
+.word-wrap1, .word-wrap2 {
+    font-family: "Belleza", sans-serif;
+}
+
+ul.bullet2 {
+    list-style-type: square;
+    font-family: "Dhurjati", cursive;
+    font-size: 2em;
+    padding-left: 80px;
+}
