@@ -4,13 +4,11 @@ class GuestsController < ApplicationController
     @guest = Guest.new
   end
 
-  def make
+  def create
     @guest = Guest.new(guest_params)
     if @guest.valid?
       @guest.send_mail # Instance method in Guest model
-       # NotifierMailer.guest_info(@guest).deliver_now
-      flash[:notice] = "Your request has been sent! Thank you for contacting us."
-      redirect_to welcome_path
+      redirect_to infosent_path
     else
       render 'new'
     end
@@ -21,5 +19,8 @@ class GuestsController < ApplicationController
   def guest_params
       params.require(:guest).permit(:fname, :lname, :phone, :email, :interest)
   end
-
+  
+  def flash_notice
+    flash[:notice] = "Your request has been sent! Thank you for contacting us."
+  end
 end

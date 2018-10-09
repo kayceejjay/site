@@ -15,14 +15,16 @@ class Guest
   validates :email, presence: true, length: { maximum: 255 }, format: { with: VALID_EMAIL_REGEX }
   validates :interest, presence: true
   
-  def initialize(fname, lname, phone, email, interest)
-       @fname = fname
-       @lname = lname
-       @phone = phone
-       @email = email
-       @interest = interest
-
-       post_initialize
+  # Create custom initialize method for ActiveModel/ActiveRecord initialize won't work
+  def initialize(attributes={})
+       attributes.each do |name, value|
+          if name == "email"
+            value.downcase
+            send("#{name}=", value)
+          else
+            send("#{name}=", value)
+          end
+       end
   end
   
       # #make in lieu of #create

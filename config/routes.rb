@@ -26,6 +26,8 @@ Rails.application.routes.draw do
   
   get '/reqinfo', to: 'guests#new' # /guest/new
   
-  post '/reqinfo', to: 'guests#make' # /guest/make
+  post '/reqinfo', to: 'guests#create' # /guest/create
+  
+  get '/infosent', to: 'navpages#sent'
   
 end

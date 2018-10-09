@@ -82,8 +82,9 @@ ul.bullet1 {
         &:hover {
         background-color: $water;
         border: 1px solid $charcoal;
+        text-align: center;
         color: black;
-        font-size: 1em;
+        font-size: 0.75em;
         font-weight: bold;
         }
 }

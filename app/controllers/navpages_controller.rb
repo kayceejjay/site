@@ -25,6 +25,8 @@ class NavpagesController < ApplicationController
   def services
   end
   
+  def sent
+  end
 
   private
 
